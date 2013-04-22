@@ -1,0 +1,17 @@
+# ignore IDE settings
+.c9revisions
+.components
+.idea
+.settings
+
+# ignore vendors
+node_modules
+example/public/components
+
+# ignore generated files
+npm-debug.log
+
+# ignore compiled assets
+*.html
+*.js
+*.css
