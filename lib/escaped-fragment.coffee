@@ -12,7 +12,7 @@ module.exports = (container, callback) ->
     escapedFragment = req.query._escaped_fragment_
     return callback() unless escapedFragment?
 
-    url = "http://127.0.0.1:#{container.get("port")}/#!/#{escapedFragment}"
+    url = "http://127.0.0.1:#{container.get("port")}/#!#{escapedFragment}"
   
     phantomProxy.create proxyConfigs, (proxy) =>
       page = proxy.page
